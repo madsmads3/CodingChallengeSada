@@ -49,19 +49,22 @@ public class codingChallenge {
         while (!(isFound(myWord))) {
             // if longest word myWord contains subset compareWord then remove the subset
             // from the longest word
+            //continue while length of word is more than 1
             if (myWord.contains(compareWord)) {
                 myNewWord = myWord.replaceAll(compareWord, "");
 
             }
-            // else go to next
+            // else go to next & run recursively
             else {
                 indexCompare = indexCompare + 1;
+                wordCompare(wordlist, indexLargest, indexCompare);
             }
         }
         return myNewWord;
 
     }
 
+    //check length of word
     public static boolean isFound(String element) {
         if (element.length() < 1) {
             return true;
