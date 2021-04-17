@@ -60,6 +60,7 @@ public class codingChallenge {
                 wordCompare(wordlist, indexLargest, indexCompare);
             }
         }
+        //return empty string to prove subset were removed
         return myNewWord;
 
     }
