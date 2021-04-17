@@ -17,7 +17,7 @@ public class codingChallenge {
         StringBuilder sb = new StringBuilder();
         String strLine = "";
         try {
-            BufferedReader br = new BufferedReader(new FileReader("/home/students/test.txt"));
+            BufferedReader br = new BufferedReader(new FileReader("/Users/david/Desktop/codingchallenge/codingChallenge/src/words.txt"));
             while (strLine != null) {
                 strLine = br.readLine();
                 sb.append(strLine);
